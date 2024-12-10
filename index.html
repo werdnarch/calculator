@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Calculator app</title>
+</head>
+<body>
+
+  <div class="main-wrapper">
+
+  <nav class="toggle-nav">
+    <p class="calc">calc</p>
+
+    <div class = "toggle-section">
+      <p class="theme">THEME</p>
+      <div class="toggle-container">
+        <button class="toggle-buttons theme1button"></button>
+        <button class="toggle-buttons theme2button"></button>
+        <button class="toggle-buttons theme3button"></button>
+      </div>
+
+      <div class="toggle-label">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+      </div>
+
+    </div>
+  </nav>
+  <div>
+    <input class="screen" readonly></input>
+  </div>
+
+  <div class="calculator theme1">
+
+    
+
+    <div class="keyboard">
+      <div class="row row1">
+        <button class="default-button button7" onclick = "appendToDisplay('7')">7</button>
+        <button class="default-button button8"onclick = "appendToDisplay('8')">8</button>
+        <button class="default-button button9"onclick = "appendToDisplay('9')">9</button>
+        <button class="js-delete" onclick="removeFromDisplay()">DEL</button>
+      </div>
+      <div class="row row2">
+        <button class="default-button button4"onclick = "appendToDisplay('4')">4</button>
+        <button class="default-button button5"onclick = "appendToDisplay('5')">5</button>
+        <button class="default-button button6"onclick = "appendToDisplay('6')">6</button>
+        <button class="default-button button+"onclick = "appendToDisplay('+')">+</button>
+      </div>
+      <div class="row row3">
+        <button class="default-button button1"onclick = "appendToDisplay('1')">1</button>
+        <button class="default-button button2"onclick = "appendToDisplay('2')">2</button>
+        <button class="default-button button3"onclick = "appendToDisplay('3')">3</button>
+        <button class="default-button button-"onclick = "appendToDisplay('-')">-</button>
+      </div>
+      <div class="row row4">
+        <button class="default-button button."onclick = "appendToDisplay('.')">.</button>
+        <button class="default-button button0"onclick = "appendToDisplay('0')">0</button>
+        <button class="default-button button/"onclick = "appendToDisplay('/')">/</button>
+        <button class="default-button buttonx"onclick = "appendToDisplay('*')">x</button>
+      </div>
+      <div class="row row5">
+        <button class="js-reset" onclick="clearDisplay()">RESET</button>
+        <button class="js-equal" onclick="calculate()">=</button>
+      </div>
+    </div>
+
+  </div>
+  <div class="calculator theme2">
+
+    <div class="keyboard">
+      <div class="row row1">
+        <button class="default-button" onclick = "appendToDisplay('7')">7</button>
+        <button class="default-button" onclick = "appendToDisplay('8')">8</button>
+        <button class="default-button" onclick = "appendToDisplay('9')">9</button>
+        <button class="js-delete" onclick="removeFromDisplay()">DEL</button>
+      </div>
+      <div class="row row2">
+        <button class="default-button" onclick = "appendToDisplay('4')">4</button>
+        <button class="default-button" onclick = "appendToDisplay('5')">5</button>
+        <button class="default-button" onclick = "appendToDisplay('6')">6</button>
+        <button class="default-button" onclick = "appendToDisplay('+')">+</button>
+      </div>
+      <div class="row row3">
+        <button class="default-button" onclick = "appendToDisplay('1')">1</button>
+        <button class="default-button" onclick = "appendToDisplay('2')">2</button>
+        <button class="default-button" onclick = "appendToDisplay('3')">3</button>
+        <button class="default-button" onclick = "appendToDisplay('-')">-</button>
+      </div>
+      <div class="row row4">
+        <button class="default-button" onclick = "appendToDisplay('.')">.</button>
+        <button class="default-button" onclick = "appendToDisplay('0')">0</button>
+        <button class="default-button" onclick = "appendToDisplay('/')">/</button>
+        <button class="default-button" onclick = "appendToDisplay('*')">x</button>
+      </div>
+      <div class="row row5">
+        <button class="js-reset" onclick="clearDisplay()">RESET</button>
+        <button class="js-equal" onclick="calculate()">=</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="calculator theme3">
+
+    <div class="keyboard">
+      <div class="row row1">
+        <button class="default-button" onclick="appendToDisplay('7')">7</button>
+        <button class="default-button" onclick="appendToDisplay('8')">8</button>
+        <button class="default-button" onclick="appendToDisplay('9')">9</button>
+        <button class="js-delete" onclick="removeFromDisplay()">DEL</button>
+      </div>
+      <div class="row row2">
+        <button class="default-button" onclick="appendToDisplay('4')">4</button>
+        <button class="default-button" onclick="appendToDisplay('5')">5</button>
+        <button class="default-button" onclick="appendToDisplay('6')">6</button>
+        <button class="default-button" onclick="appendToDisplay('+')">+</button>
+      </div>
+      <div class="row row3">
+        <button class="default-button" onclick="appendToDisplay('1')">1</button>
+        <button class="default-button" onclick="appendToDisplay('2')">2</button>
+        <button class="default-button" onclick="appendToDisplay('3')">3</button>
+        <button class="default-button" onclick="appendToDisplay('-')">-</button>
+      </div>
+      <div class="row row4">
+        <button class="default-button" onclick="appendToDisplay('.')">.</button>
+        <button class="default-button" onclick="appendToDisplay('0')">0</button>
+        <button class="default-button" onclick="appendToDisplay('/')">/</button>
+        <button class="default-button" onclick="appendToDisplay('*')">x</button>
+      </div>
+      <div class="row row5">
+        <button class="js-reset" onclick="clearDisplay()">RESET</button>
+        <button class="js-equal" onclick="calculate()">=</button>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+<script src="script.js">
+</script>
+
+  
+
+
+  
+</body>
+</html>

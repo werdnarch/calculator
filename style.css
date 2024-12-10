@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+*,
+*::before,
+*::after{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'League Spartan';
+}
+body{
+  height:100vh;
+  width:100vw;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  background-color:hsl(222, 26%, 31%);
+}
+.main-wrapper{
+  width:fit-content;
+  height: fit-content;
+  padding:20px;
+}
+
+/*TOGGLE SETTINGS*/
+nav{
+  display: flex;
+  justify-content: space-between;
+  color:white;
+}
+.theme{
+  font-size: 0.8rem;
+}
+
+.calc{
+  font-size: 1.4rem;
+}
+
+.toggle-section{
+  display: flex;
+  gap:20px;
+  align-items: center;
+  position: relative;
+}
+
+.toggle-container{
+  display: flex;
+  gap:5px;
+  padding:3px;
+  border-radius:10px;
+  background-color: hsl(223, 31%, 20%);
+  position: relative;
+}
+
+.toggle-label{
+  display: flex;
+  padding-right:5%;
+  gap:12px;
+  justify-content: space-evenly;
+  position: absolute;
+  bottom:110%;
+  right:0;
+}
+
+.toggle-buttons{
+  aspect-ratio: 1;
+  width:15px;
+  border-radius: 100%;
+  border:none;
+  cursor:pointer;
+}
+
+/*DEFAULT STYLING*/
+
+.screen{
+  height:80px;
+  margin-top:10px;
+  margin-bottom:10px;
+  border-radius:5px;
+  width:100%;
+  outline:none;
+  border:none;
+  text-align: right;
+  padding-right:10px;
+  font-size:32px;
+}
+
+.keyboard{
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  padding:15px;
+  border-radius: 10px;
+}
+
+.row{
+  display:flex;
+  justify-content: space-between;
+  gap:10px;
+}
+.default-button{
+  font-size: 32px;
+}
+.theme1button{
+  background-color: hsl(6, 63%, 50%);
+}
+.theme2button,.theme3button{
+  background-color: inherit;
+}
+
+.row button{
+  width:70px;
+  height:40px;
+  border:none;
+  cursor:pointer;
+  border-radius:7px;
+  
+}
+
+.screen{
+  color:white;
+}
+
+.row5 button{
+  width:100%;
+}
+.row5{
+  gap:20px;
+}
+.theme2{
+  display: none;
+}
+.theme3{
+  display: none;
+}
+.js-delete,.js-reset,.js-equal{
+  font-size: 1.5rem
+  
+}
+.screen{
+  background-color:hsl(224, 36%, 15%);
+}
+
+
+/*THEME 1 STYLING*/
+
+.theme1 .screen{
+  background-color:hsl(224, 36%, 15%);
+}
+.theme1 .keyboard{
+  background-color:hsl(223, 31%, 20%);;
+}
+.theme1 .default-button{
+  background-color: hsl(30, 25%, 89%);
+  box-shadow: 0px 4px hsl(28, 16%, 65%);
+  color:hsl(221, 14%, 31%);
+}
+.theme1 .js-delete,
+.theme1 .js-reset{
+  background-color: hsl(225, 21%, 49%);
+  box-shadow: 0px 4px hsl(224, 28%, 35%);
+  color:white;
+}
+.theme1 .js-equal{
+  background-color:hsl(6, 63%, 50%) ;
+  box-shadow:0px 4px hsl(6, 70%, 34%);
+  color:white;
+}
+
+
+/*THEME 2 STYLING*/
+.theme2 .screen{
+  background-color:hsl(0, 0%, 93%);
+}
+.theme2 .keyboard{
+  background-color:hsl(0, 5%, 81%);
+}
+.theme2 .default-button{
+  background-color:hsl(45, 7%, 89%);
+  box-shadow: 0px 4px hsl(35, 11%, 61%);
+  color:hsl(60, 10%, 19%);
+}
+
+.theme2 .js-delete,
+.theme2 .js-reset{
+  background-color: hsl(185, 42%, 37%);
+  box-shadow: 0px 4px hsl(185, 58%, 25%);
+  color:white;
+}
+
+.theme2 .js-equal{
+  background-color: hsl(25, 98%, 40%);
+  box-shadow: 0px 4px hsl(25, 99%, 27%);
+  color:white;
+}
+
+
+/*THEME 3 STYLING*/
+.theme3 .screen{
+  background-color:hsl(268, 71%, 12%);
+}
+.theme3 .keyboard{
+  background-color: hsl(268, 71%, 12%);
+}
+
+.theme3 .default-button{
+  background-color: hsl(268, 47%, 21%);
+  box-shadow: 0px 4px hsl(290, 70%, 36%);
+  color:hsl(52, 100%, 62%);
+}
+
+.theme3 .js-delete,
+.theme3 .js-reset{
+  background-color: hsl(281, 89%, 26%);
+  box-shadow:0px 4px hsl(285, 91%, 52%);
+  color:white;
+
+}
+
+.theme3 .js-equal{
+  background-color:hsl(176, 100%, 44%) ;
+  box-shadow: 0px 4px hsl(177, 92%, 70%);
+  color:hsl(198, 20%, 13%);
+}
+
+@media (max-width:480px) {
+  body{
+    height:100svh;
+  }  
+}
